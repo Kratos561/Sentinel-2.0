@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentinel Predator | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="glass-overlay"></div>
+
+    <header>
+        <div class="logo-area">
+            <span class="eagle-icon">🦅</span>
+            <h1>SENTINEL <span class="accent">PREDATOR</span></h1>
+        </div>
+        <div class="status-badge" id="system-status">
+            <span class="pulse-dot"></span> SISTEMA AUTÓNOMO VIVA
+        </div>
+    </header>
+
+    <main>
+        <!-- SECCIÓN DE MÉTRICAS CLAVE -->
+        <section class="metrics-grid">
+            <div class="metric-card glass">
+                <h3>BALANCE TOTAL</h3>
+                <div class="value" id="balance-val">$0.00</div>
+                <div class="trend positive">PROTECCIÓN ACTIVA</div>
+            </div>
+            <div class="metric-card glass">
+                <h3>EQUITY (RIESGO)</h3>
+                <div class="value" id="equity-val">$0.00</div>
+                <div class="trend" id="equity-trend">CALIBRADO</div>
+            </div>
+            <div class="metric-card glass highlight">
+                <h3>PnL FLOTANTE</h3>
+                <div class="value" id="pnl-val">$0.00</div>
+                <div class="trend" id="pnl-trend">EN TIEMPO REAL</div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE ACTIVIDAD -->
+        <div class="content-row">
+            <section class="trades-area glass">
+                <div class="section-header">
+                    <h2>CACERÍAS ACTIVAS</h2>
+                    <span class="count-badge" id="trade-count">0</span>
+                </div>
+                <div class="table-container">
+                    <table id="trades-table">
+                        <thead>
+                            <tr>
+                                <th>ACTIVO</th>
+                                <th>TIPO</th>
+                                <th>PRECIO ENTRADA</th>
+                                <th>ACTUAL</th>
+                                <th>PnL</th>
+                                <th>ESTADO</th>
+                            </tr>
+                        </thead>
+                        <tbody id="trades-body">
+                            <!-- Inyectado por JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <aside class="logs-area glass">
+                <div class="section-header">
+                    <h2>ÚLTIMOS PULSOS</h2>
+                </div>
+                <div class="log-list" id="log-list">
+                    <div class="log-item">Iniciando conexión con el núcleo...</div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="update-info">
+            Última actualización: <span id="last-update">-</span>
+        </div>
+        <div class="node-info">
+            RAILWAY NODE: NYC-3 | SUPABASE_CLOUD
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
