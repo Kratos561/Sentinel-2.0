@@ -1,15 +1,20 @@
 {
-    "name": "sentinel-core",
-    "version": "2.0.0",
-    "main": "cloud_entry.js",
-    "scripts": {
-        "start": "node cloud_entry.js"
-    },
-    "dependencies": {
-        "express": "^4.18.2",
-        "node-cron": "^3.0.0",
-        "node-fetch": "^2.6.7",
-        "@supabase/supabase-js": "^2.0.0",
-        "dotenv": "^16.0.0"
-    }
+  "name": "sentinel-advance",
+  "version": "2.1.0",
+  "description": "Sentinel Autonomous Trading Core",
+  "main": "cloud_entry.js",
+  "scripts": {
+    "start": "node cloud_entry.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^2.7.0",
+    "@supabase/supabase-js": "^2.39.3",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }
